@@ -48,8 +48,6 @@
     
     <title>
         
-            Archives | 
-        
         Homepage
     </title>
 
@@ -220,7 +218,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Homepage">
-    <meta name="msapplication-starturl" content="http://ZhenyuPU.github.io/archives/">
+    <meta name="msapplication-starturl" content="http://ZhenyuPU.github.io/2023/09/09/Git%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Homepage">
@@ -235,13 +233,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://ZhenyuPU.github.io/archives/">
+    <meta property="og:url" content="http://ZhenyuPU.github.io/2023/09/09/Git%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Archives | Homepage">
+    <meta property="og:title" content="Homepage">
     <meta property="og:image" content="/img/favicon.svg">
     <meta property="og:description" content="">
     
 
+    
+        <meta property="article:published_time" content="Sat Sep 09 2023 07:02:00 GMT+0200">
+        <meta property="article:modified_time" content="Sat Sep 09 2023 01:25:52 GMT+0200">
     
 
     <!-- The Twitter Card protocol -->
@@ -249,13 +250,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://ZhenyuPU.github.io/archives/index.html" />
+        <link rel="canonical" href="http://ZhenyuPU.github.io/2023/09/09/Git%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://ZhenyuPU.github.io/2023/09/09/Git%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/index.html",
+    "headline": "",
+    "datePublished": "Sat Sep 09 2023 07:02:00 GMT+0200",
+    "dateModified": "Sat Sep 09 2023 01:25:52 GMT+0200",
+    "author": {
+        "@type": "Person",
+        "name": "Zhenyu PU",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Hi, nice to meet you"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Homepage",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.svg"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
 
 
     
@@ -289,210 +320,290 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Git%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA"><span class="post-toc-number">1.</span> <span class="post-toc-text">Git仓库搭建</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#main"><span class="post-toc-number">2.</span> <span class="post-toc-text">*main</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#master"><span class="post-toc-number">3.</span> <span class="post-toc-text">master</span></a></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2023/09/09/Git%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/"></a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Gi...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2023/09/09/Git%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Zhenyu PU's avatar">
-            </div>
-            <div>
-                <strong>Zhenyu PU</strong>
-                <span>Sep 09, 2023</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2023/09/09/Start/">Start</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2023/09/09/Start/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Zhenyu PU's avatar">
-            </div>
-            <div>
-                <strong>Zhenyu PU</strong>
-                <span>Sep 09, 2023</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/AI/">AI</a>, <a class="post_category-link" href="/categories/AI/Optimisation/">Optimisation</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2023/09/09/hello-world/">Hello World</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Welcome to Hexo! This is your very first po...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2023/09/09/hello-world/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Zhenyu PU's avatar">
-            </div>
-            <div>
-                <strong>Zhenyu PU</strong>
-                <span>Sep 09, 2023</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Zhenyu PU</strong>
+        <span>Sep 09, 2023</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=&url=http://ZhenyuPU.github.io/2023/09/09/Git%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/index.html&pic=http://ZhenyuPU.github.io/img/favicon.svg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Weibo
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=&url=http://ZhenyuPU.github.io/2023/09/09/Git%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/index.html&via=Zhenyu PU" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://ZhenyuPU.github.io/2023/09/09/Git%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://ZhenyuPU.github.io/2023/09/09/Git%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="Git仓库搭建"><a href="#Git仓库搭建" class="headerlink" title="Git仓库搭建"></a>Git仓库搭建</h1><p>配置名字和邮箱：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;puzhenyu&quot;</span><br><span class="line"></span><br><span class="line">$ git config --global user.email zhenyupu@foxmail.com</span><br></pre></td></tr></table></figure>
+
+<p>在项目所在文件夹输入：$ git init，就变成git仓库</p>
+<p>克隆别人的项目：<code>git clone URL</code></p>
+<p>文件四个状态：未跟踪，未修改，已修改，暂存</p>
+<p>跟踪文件或者目录： <code>$ git add &lt;name&gt;</code></p>
+<p>不想被跟踪——删除： <code>$ git rm &lt;name&gt;</code></p>
+<p>保留在目录但不被跟踪：<code>$ git rm --cache &lt;name&gt;</code></p>
+<p>缓存状态： <code>git add &lt;file-name&gt;</code></p>
+<p>取消缓存：<code>git reset HEAD &lt;name&gt;</code></p>
+<p>提交修改：<code>git commit -m &#39;修改内容&#39;</code></p>
+<p>取消提交： <code>git reset head~ --soft</code>，但不能撤回第一次提交</p>
+<p>查看状态：<code>git status</code></p>
+<p>查看文件哪里被修改：<code>git diff</code></p>
+<p>查看提交历史：<code>git log</code>，美化输出：<code>git log --pretty</code></p>
+<p>e.g. <code>git log--pretty=oneline</code>, <code>git log --graph</code></p>
+<p>连接远程仓库：<code>git remote add filename URL</code></p>
+<p>修改名字： <code>git remote rename oldname newname</code></p>
+<p>推送分支：<code>git push filename branch</code></p>
+<p>ssh协议去健全：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh_test cd ~/.ssh</span><br><span class="line">.ssh ssh-keygen -t rsa -b 4096 -C &quot;zhenyupu@foxmail.com&quot; #生成密钥</span><br></pre></td></tr></table></figure>
+
+<p>同步问题：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .      #缓存所有文件</span><br><span class="line">git status     #查看状态</span><br><span class="line">git commit -m .  #提交所有修改</span><br><span class="line">git push origin master    #更新远程仓库</span><br></pre></td></tr></table></figure>
+
+
+<p>为了实现本地代码和github上默认main分支关联,步骤如下进行修复 :</p>
+<ul>
+<li>git checkout -b main</li>
+</ul>
+<p>#switched to a new branch ‘main’</p>
+<ul>
+<li>git branch</li>
+</ul>
+<h1 id="main"><a href="#main" class="headerlink" title="*main"></a>*main</h1><h1 id="master"><a href="#master" class="headerlink" title="master"></a>master</h1><ul>
+<li>git merge master</li>
+</ul>
+<p>#将master分支合并 到main上<br>#Already up to date</p>
+<ul>
+<li>git pull origin main –allow-unrelated-histories</li>
+<li>git push origin main</li>
+</ul>
+<p>第一次提交到github上：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;*@*.com&quot;</span><br><span class="line"># 本机命令，查看公钥，或者去文件地址用vscode打开查看：</span><br><span class="line">cat ~/.ssh/id_rsa.pub</span><br><span class="line"># 之后再github线上添加公钥：项目仓库 =&gt; settings =&gt; SSH and GPG keys =&gt; New SSH key </span><br></pre></td></tr></table></figure>
+<p><img src="/image/Git%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/1693843024189.png" alt="1693843024189"></p>
+<p><img src="/image/Git%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/1693846040309.png" alt="1693846040309"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git fetch</span><br><span class="line">git stash</span><br><span class="line">git merge &#x27;@&#123;u&#125;&#x27;</span><br><span class="line">git stash pop</span><br></pre></td></tr></table></figure>
+<p>When you can’t integrate both storage, you need to look up the following website.<br><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/39399804/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind-its-remot">https://stackoverflow.com/questions/39399804/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind-its-remot</a></p>
+<p><a target="_blank" rel="noopener" href="https://pages.github.com/">https://pages.github.com/</a></p>
+<p>create a new repository on the command line<br>echo “# ZhenyuPU.github.io” &gt;&gt; README.md<br>git init<br>git add README.md<br>git commit -m “first commit”<br>git branch -M main<br>git remote add origin <a target="_blank" rel="noopener" href="https://github.com/ZhenyuPU/ZhenyuPU.github.io.git">https://github.com/ZhenyuPU/ZhenyuPU.github.io.git</a><br>git push -u origin main</p>
+<p>push an existing repository from the command line<br>git remote add origin <a target="_blank" rel="noopener" href="https://github.com/ZhenyuPU/ZhenyuPU.github.io.git">https://github.com/ZhenyuPU/ZhenyuPU.github.io.git</a><br>git branch -M main<br>git push -u origin main</p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://zhenyupu.github.io/2023/09/09/Git%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://zhenyupu.github.io/2023/09/09/Git%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2023/09/09/Start/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
