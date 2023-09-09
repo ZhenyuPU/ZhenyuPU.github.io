@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Algorithm</title>
+      <link href="/2023/09/09/Algorithm/"/>
+      <url>/2023/09/09/Algorithm/</url>
+      
+        <content type="html"><![CDATA[<h1 id="分治算法"><a href="#分治算法" class="headerlink" title="分治算法"></a>分治算法</h1><h2 id="分治算法简介"><a href="#分治算法简介" class="headerlink" title="分治算法简介"></a>分治算法简介</h2><p>分治算法（Divide and Conquer）：字面上的解释是「分而治之」，就是把一个复杂的问题分成两个或更多的相同或相似的子问题，直到最后子问题可以简单的直接求解，原问题的解即子问题的解的合并。</p><p>简单来说，分治算法的基本思想就是： 把规模大的问题不断分解为子问题，使得问题规模减小到可以直接求解为止。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Algorithm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Algorithm </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Git 教程</title>
       <link href="/2023/09/09/Git%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/"/>
       <url>/2023/09/09/Git%E4%BB%93%E5%BA%93%E6%90%AD%E5%BB%BA/</url>
@@ -12,32 +39,9 @@
       
       
       
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Start</title>
-      <link href="/2023/09/09/Start/"/>
-      <url>/2023/09/09/Start/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> AI </category>
-          
-          <category> Optimisation </category>
-          
-      </categories>
-      
-      
         <tags>
             
-            <tag> ALGORITHME </tag>
-            
-            <tag> PAPY </tag>
+            <tag> Git </tag>
             
         </tags>
       
