@@ -4,13 +4,25 @@
   
     
     <entry>
-      <title></title>
-      <link href="/2023/09/30/Convex%20optimization%20Boyd/"/>
-      <url>/2023/09/30/Convex%20optimization%20Boyd/</url>
+      <title>Convex optimization Boyd</title>
+      <link href="/2023/10/01/Convex%20optimization%20Boyd/"/>
+      <url>/2023/10/01/Convex%20optimization%20Boyd/</url>
       
         <content type="html"><![CDATA[<h1 id="Convex-optimization-Boyd"><a href="#Convex-optimization-Boyd" class="headerlink" title=" Convex optimization Boyd"></a><center> Convex optimization Boyd</h1><h2 id="Convex-optimization-problems"><a href="#Convex-optimization-problems" class="headerlink" title="Convex optimization problems"></a>Convex optimization problems</h2><p>Know about optimization problems and the meaning of convex optimization</p><h3 id="Basic-terminology"><a href="#Basic-terminology" class="headerlink" title="Basic terminology:"></a>Basic terminology:</h3><p>Feasible; Feasible set and constraint set (feasible points)<br>The domain of optimization problem:<br>$$ D &#x3D; \bigcap_{i&#x3D;0}^{m} dom f_i \cap \bigcap_{i&#x3D;1}^{p} dom h_i $$</p><p>unbounded below: $ f_0(x_k) \rightarrow -\infty$, as $ k \rightarrow \infty $</p><ul><li>Optimal point</li><li>locally optimal point: x maximizes $f_0$ over nearby points in the feasible set.</li></ul><p>active and inactive; constraint is redundant</p><h4 id="Feasiblility-problem"><a href="#Feasiblility-problem" class="headerlink" title="Feasiblility problem"></a>Feasiblility problem</h4><h4 id="Maximization-problem"><a href="#Maximization-problem" class="headerlink" title="Maximization problem"></a>Maximization problem</h4><h4 id="Equivalent-problems"><a href="#Equivalent-problems" class="headerlink" title="Equivalent problems:"></a>Equivalent problems:</h4><p>equivalent means if from a solution of one, a solution of the other is readily found.<br>They are not the same since the functions differ but they are equivalent.</p><p>Transformations that yield equivalent problems:</p><h5 id="change-of-varibales"><a href="#change-of-varibales" class="headerlink" title="change of varibales:"></a>change of varibales:</h5><p>$$ \begin{align}<br>\hat{f_i(z)} &amp;&#x3D; f_i(\phi(z)), i &#x3D; 0,…,m \<br>\hat{h_i(z)} &amp;&#x3D; h_i(\phi(z)), i&#x3D;1,…,p\<br>\end{align}$$<br>substistution of varibale: $x &#x3D; \phi(z) $, where suppose $\phi$ is one to one</p><h5 id="Transformation-of-objective-and-constaint-functions"><a href="#Transformation-of-objective-and-constaint-functions" class="headerlink" title="Transformation of objective and constaint functions"></a>Transformation of objective and constaint functions</h5><p>Suppose that $\phi_0$ is monotone increasing and $\phi_i(u) \leq 0$ if and only if $u \leq 0$, and $\phi_{m+1},…,\phi_{m+p}$ satisfy $\phi_i(u) &#x3D; 0 $ if and only if $ u &#x3D; 0 $<br>$$\begin{align}<br>\hat{f_i}(x) &amp;&#x3D; \psi_i(f_i(x)) \<br>\hat{h_i}(x) &amp;&#x3D; \psi_{m+i}(h_i(x)) \<br>\end{align}$$<br>&#x3D;&#x3D;why $ ||Ax - b||_2 $ is not differentiable&#x3D;&#x3D;</p><h5 id="Slack-varibales"><a href="#Slack-varibales" class="headerlink" title="Slack varibales"></a>Slack varibales</h5><p>Suppose $s_i &#x3D; -f_i(x) &lt; 0 $ then $(x, s)$ is feasible for the problem and x is feasible for the original problem.</p><h5 id="Eliminating-equality-constraints"><a href="#Eliminating-equality-constraints" class="headerlink" title="Eliminating equality constraints"></a>Eliminating equality constraints</h5><p>Suppose a function $\phi$: is such that x satisfies $h_i(x)&#x3D;0$ if and only if there is some z such that $x &#x3D; \phi(z)$</p><h5 id="Eliminating-linear-equality-constraints"><a href="#Eliminating-linear-equality-constraints" class="headerlink" title="Eliminating linear equality constraints"></a>Eliminating linear equality constraints</h5><h3 id="Linear-optimization"><a href="#Linear-optimization" class="headerlink" title="Linear optimization"></a>Linear optimization</h3><h3 id="Quadratic-optimization"><a href="#Quadratic-optimization" class="headerlink" title="Quadratic optimization"></a>Quadratic optimization</h3><h3 id="Geometric-programming"><a href="#Geometric-programming" class="headerlink" title="Geometric programming"></a>Geometric programming</h3><h3 id="Generalized-inequality-constraints"><a href="#Generalized-inequality-constraints" class="headerlink" title="Generalized inequality constraints"></a>Generalized inequality constraints</h3><h3 id="Vector-optimization"><a href="#Vector-optimization" class="headerlink" title="Vector optimization"></a>Vector optimization</h3><h2 id="Convex-function"><a href="#Convex-function" class="headerlink" title="Convex function"></a>Convex function</h2><h2 id="Duality"><a href="#Duality" class="headerlink" title="Duality"></a>Duality</h2><h2 id="Convex-sets"><a href="#Convex-sets" class="headerlink" title="Convex sets"></a>Convex sets</h2>]]></content>
       
       
+      <categories>
+          
+          <category> Convex optimization </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Convex optimization </tag>
+            
+        </tags>
       
     </entry>
     
@@ -111,6 +123,17 @@
     
     
     <entry>
+      <title>404 Not Found</title>
+      <link href="//404.html"/>
+      <url>//404.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>categories</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
@@ -125,17 +148,6 @@
       <title>tags</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>404 Not Found</title>
-      <link href="//404.html"/>
-      <url>//404.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
