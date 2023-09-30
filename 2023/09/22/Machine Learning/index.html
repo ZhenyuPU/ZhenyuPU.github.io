@@ -48,8 +48,6 @@
     
     <title>
         
-            categories | 
-        
         Homepage
     </title>
 
@@ -215,7 +213,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Homepage">
-    <meta name="msapplication-starturl" content="http://ZhenyuPU.github.io/categories/">
+    <meta name="msapplication-starturl" content="http://ZhenyuPU.github.io/2023/09/22/Machine%20Learning/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Homepage">
@@ -230,13 +228,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://ZhenyuPU.github.io/categories/">
+    <meta property="og:url" content="http://ZhenyuPU.github.io/2023/09/22/Machine%20Learning/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="categories | Homepage">
+    <meta property="og:title" content="Homepage">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
     
 
+    
+        <meta property="article:published_time" content="Fri Sep 22 2023 09:17:35 GMT+0200">
+        <meta property="article:modified_time" content="Fri Sep 22 2023 09:17:35 GMT+0200">
     
 
     <!-- The Twitter Card protocol -->
@@ -244,13 +245,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://ZhenyuPU.github.io/categories/index.html" />
+        <link rel="canonical" href="http://ZhenyuPU.github.io/2023/09/22/Machine%20Learning/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://ZhenyuPU.github.io/2023/09/22/Machine%20Learning/index.html",
+    "headline": "",
+    "datePublished": "Fri Sep 22 2023 09:17:35 GMT+0200",
+    "dateModified": "Fri Sep 22 2023 09:17:35 GMT+0200",
+    "author": {
+        "@type": "Person",
+        "name": "Zhenyu PU",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "Hi, nice to meet you"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Homepage",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "Algorithm, Optimization",
+    "description": "",
+}
+</script>
 
 
     
@@ -286,6 +317,39 @@
 
                     <!-- Post TOC -->
 
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Machine-Learning"><span class="post-toc-number">1.</span> <span class="post-toc-text">Machine Learning</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%86%B3%E7%AD%96%E6%A0%91"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">决策树</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%89%B9%E5%BE%81%E9%80%89%E6%8B%A9"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">特征选择</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%86%B3%E7%AD%96%E6%A0%91%E7%94%9F%E6%88%90"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">决策树生成</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%86%B3%E7%AD%96%E6%A0%91%E5%89%AA%E6%9E%9D"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">决策树剪枝</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%86%B3%E7%AD%96%E6%A0%91%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95%EF%BC%9A"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">决策树常用算法：</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#ID3-%E7%AE%97%E6%B3%95"><span class="post-toc-number">1.1.4.1.</span> <span class="post-toc-text">ID3 算法</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#C4-5-%E7%AE%97%E6%B3%95"><span class="post-toc-number">1.1.4.2.</span> <span class="post-toc-text">C4.5 算法</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#CART%EF%BC%88Classification-and-Regression-Tree%EF%BC%89"><span class="post-toc-number">1.1.4.3.</span> <span class="post-toc-text">CART（Classification and Regression Tree）</span></a></li></ol></li></ol></li></ol></li></ol>
+    </ul>
+    
+
+
+
 
 <!-- Layouts -->
 
@@ -312,7 +376,7 @@
         
     
             <p class="article-headline-p">
-                categories
+                
             </p>
         </div>
 
@@ -331,7 +395,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Zhenyu PU</strong>
-        <span>Sep 09, 2023</span>
+        <span>Sep 22, 2023</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -363,7 +427,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=categories&url=http://ZhenyuPU.github.io/categories/index.html&pic=http://ZhenyuPU.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=&url=http://ZhenyuPU.github.io/2023/09/22/Machine%20Learning/index.html&pic=http://ZhenyuPU.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 Share to Weibo
             </li>
@@ -372,7 +436,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=categories&url=http://ZhenyuPU.github.io/categories/index.html&via=Zhenyu PU" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=&url=http://ZhenyuPU.github.io/2023/09/22/Machine%20Learning/index.html&via=Zhenyu PU" target="_blank">
             <li class="mdl-menu__item">
                 Share to Twitter
             </li>
@@ -381,7 +445,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://ZhenyuPU.github.io/categories/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://ZhenyuPU.github.io/2023/09/22/Machine%20Learning/index.html" target="_blank">
             <li class="mdl-menu__item">
                 Share to Facebook
             </li>
@@ -396,7 +460,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Homepage&title=categories&summary=&pics=http://ZhenyuPU.github.io/img/favicon.png&url=http://ZhenyuPU.github.io/categories/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Homepage&title=&summary=&pics=http://ZhenyuPU.github.io/img/favicon.png&url=http://ZhenyuPU.github.io/2023/09/22/Machine%20Learning/index.html" target="_blank">
             <li class="mdl-menu__item">
                 Share to QQ
             </li>
@@ -415,7 +479,15 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        
+        <h1 id="Machine-Learning"><a href="#Machine-Learning" class="headerlink" title="Machine Learning"></a>Machine Learning</h1><h2 id="决策树"><a href="#决策树" class="headerlink" title="决策树"></a>决策树</h2><p>步骤：特征选择，决策树生成，决策树剪枝</p>
+<h3 id="特征选择"><a href="#特征选择" class="headerlink" title="特征选择"></a>特征选择</h3><p>特征选择决定了使用哪些特征来做判断。在训练数据集中，每个样本的属性可能有很多个，不同属性的作用有大有小。因而特征选择的作用就是筛选出跟分类结果相关性较高的特征，也就是分类能力较强的特征。</p>
+<p>在特征选择中通常使用的准则是：信息增益。</p>
+<h3 id="决策树生成"><a href="#决策树生成" class="headerlink" title="决策树生成"></a>决策树生成</h3><p>选择好特征后，就从根节点触发，对节点计算所有特征的信息增益，选择信息增益最大的特征作为节点特征，根据该特征的不同取值建立子节点；对每个子节点使用相同的方式生成新的子节点，直到信息增益很小或者没有特征可以选择为止。</p>
+<h3 id="决策树剪枝"><a href="#决策树剪枝" class="headerlink" title="决策树剪枝"></a>决策树剪枝</h3><p>剪枝的主要目的是对抗「过拟合」，通过主动去掉部分分支来降低过拟合的风险。</p>
+<h3 id="决策树常用算法："><a href="#决策树常用算法：" class="headerlink" title="决策树常用算法："></a>决策树常用算法：</h3><h4 id="ID3-算法"><a href="#ID3-算法" class="headerlink" title="ID3 算法"></a>ID3 算法</h4><p>ID3 是最早提出的决策树算法，他就是利用信息增益来选择特征的。</p>
+<h4 id="C4-5-算法"><a href="#C4-5-算法" class="headerlink" title="C4.5 算法"></a>C4.5 算法</h4><p>他是 ID3 的改进版，他不是直接使用信息增益，而是引入“信息增益比”指标作为特征的选择依据。</p>
+<h4 id="CART（Classification-and-Regression-Tree）"><a href="#CART（Classification-and-Regression-Tree）" class="headerlink" title="CART（Classification and Regression Tree）"></a>CART（Classification and Regression Tree）</h4><p>这种算法即可以用于分类，也可以用于回归问题。CART 算法使用了基尼系数取代了信息熵模型。</p>
+
         
     
 
@@ -433,8 +505,8 @@
     <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://zhenyupu.github.io/categories/index.html';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://zhenyupu.github.io/categories/index.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://zhenyupu.github.io/2023/09/22/Machine%20Learning/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://zhenyupu.github.io/2023/09/22/Machine%20Learning/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 <script type="text/ls-javascript" id="disqus-thread-script">
@@ -464,11 +536,27 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
+        <a href="/2023/09/30/Convex%20optimization%20Boyd/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Newer
+        </a>
+    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
+    
+        <a href="/2023/09/10/Markdown%20%E6%95%99%E7%A8%8B/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
     
 </nav>
 
@@ -647,6 +735,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 

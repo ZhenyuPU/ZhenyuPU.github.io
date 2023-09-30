@@ -239,7 +239,7 @@
 
     
         <meta property="article:published_time" content="Sat Sep 09 2023 12:20:00 GMT+0200">
-        <meta property="article:modified_time" content="Sat Sep 09 2023 12:21:36 GMT+0200">
+        <meta property="article:modified_time" content="Wed Sep 13 2023 20:48:11 GMT+0200">
     
 
     <!-- The Twitter Card protocol -->
@@ -262,7 +262,7 @@
     "mainEntityOfPage": "http://ZhenyuPU.github.io/2023/09/09/Algorithm/index.html",
     "headline": "Algorithm",
     "datePublished": "Sat Sep 09 2023 12:20:00 GMT+0200",
-    "dateModified": "Sat Sep 09 2023 12:21:36 GMT+0200",
+    "dateModified": "Wed Sep 13 2023 20:48:11 GMT+0200",
     "author": {
         "@type": "Person",
         "name": "Zhenyu PU",
@@ -346,7 +346,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95"><span class="post-toc-number">1.</span> <span class="post-toc-text">分治算法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95%E7%AE%80%E4%BB%8B"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">分治算法简介</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="post-toc-number">1.</span> <span class="post-toc-text">算法复杂度</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95"><span class="post-toc-number">2.</span> <span class="post-toc-text">分治算法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95%E7%AE%80%E4%BB%8B"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">分治算法简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E9%80%92%E6%8E%A8%E6%B1%82%E8%A7%A3%E6%B3%95"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">递推求解法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E9%80%92%E5%BD%92%E6%A0%91%E6%B3%95"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">递归树法</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95Backtracking"><span class="post-toc-number">3.</span> <span class="post-toc-text">回溯算法Backtracking</span></a></li></ol>
     </ul>
     
 
@@ -490,9 +490,46 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="分治算法"><a href="#分治算法" class="headerlink" title="分治算法"></a>分治算法</h1><h2 id="分治算法简介"><a href="#分治算法简介" class="headerlink" title="分治算法简介"></a>分治算法简介</h2><p>分治算法（Divide and Conquer）：字面上的解释是「分而治之」，就是把一个复杂的问题分成两个或更多的相同或相似的子问题，直到最后子问题可以简单的直接求解，原问题的解即子问题的解的合并。</p>
-<p>简单来说，分治算法的基本思想就是： 把规模大的问题不断分解为子问题，使得问题规模减小到可以直接求解为止。</p>
+        <h1 id="算法复杂度"><a href="#算法复杂度" class="headerlink" title="算法复杂度"></a>算法复杂度</h1><p>常数阶O(1)：</p>
+<p>单个语句的频度均为1，不会随着问题规模n的变化而变化。因此，算法时间复杂度为常数阶，记作T(n)&#x3D;O(1)。这里我们需要注意的是，即便上述代码有成千上万行，只要执行算法的时间不会随着问题规模n的增长而增长，那么执行时间只不过是一个比较大的常数而已。此类算法的时间复杂度均为O(1)。</p>
+<p>对数阶O(log n):</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> i = <span class="number">1</span>; <span class="comment">// ①</span></span><br><span class="line"><span class="keyword">while</span> (i &lt;= n) &#123;</span><br><span class="line">   i = i * <span class="number">2</span>; <span class="comment">// ②</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>线性阶O(n):</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> j = <span class="number">0</span>; <span class="comment">// ①</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123; <span class="comment">// ②</span></span><br><span class="line">   j = i; <span class="comment">// ③</span></span><br><span class="line">   j++; <span class="comment">// ④</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>线性对数阶O(nlogN):</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> m = <span class="number">1</span>; m &lt; n; m++) &#123;</span><br><span class="line">   <span class="type">int</span> i = <span class="number">1</span>; <span class="comment">// ①</span></span><br><span class="line">   <span class="keyword">while</span> (i &lt;= n) &#123;</span><br><span class="line">      i = i * <span class="number">2</span>; <span class="comment">// ②</span></span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+
+
+<h1 id="分治算法"><a href="#分治算法" class="headerlink" title="分治算法"></a>分治算法</h1><h2 id="分治算法简介"><a href="#分治算法简介" class="headerlink" title="分治算法简介"></a>分治算法简介</h2><p>分治算法（Divide and Conquer）：字面上的解释是「分而治之」，就是把一个复杂的问题分成两个或更多的相同或相似的子问题，直到最后子问题可以简单的直接求解，原问题的解即子问题的解的合并。</p>
+<p>简单来说，分治算法的基本思想就是： 把规模大的问题不断分解为子问题，使得问题规模减小到可以直接求解为止。</p>
+<p><img src="https://cdn.staticaly.com/gh/ZhenyuPU/picx-images-hosting@master/20230911/image.3sa312g9dj20.webp" alt="image1"></p>
+<p>分治算法从实现方式上来划分，可以分为两种：「递归算法」和「迭代算法」。</p>
+<p>分治算法一般都比较适合使用递归算法来实现。但除了递归算法之外，分治算法还可以通过迭代算法来实现。比较常见的例子有：快速傅里叶变换算法、二分查找算法、非递归实现的归并排序算法等等。</p>
+<p>分治算法能够解决的问题，一般需要满足以下4个条件：</p>
+<ol>
+<li><p>原问题可以分解为若干个规模较小的相同子问题。</p>
+</li>
+<li><p>分解出来的子问题可以独立求解，即子问题之间不包含公共的子子问题。</p>
+</li>
+<li><p>具有分解的终止条件，也就是说当问题的规模足够小时，能够用较简单的方法解决。</p>
+</li>
+<li><p>子问题的解可以合并为原问题的解，并且合并操作的复杂度不能太高，否则就无法起到减少算法总体复杂度的效果了。</p>
+</li>
+</ol>
+<p>使用分治算法解决问题主要分为3个步骤：</p>
+<ol>
+<li><p>分解：把要解决的问题分解为成若干个规模较小、相对独立、与原问题形式相同的子问题。<br>第一步中将问题分解为若干个子问题时，最好使子问题的规模大致相同。换句话说，将一个问题分成大小相等的<br>个子问题的处理方法是行之有效的。在许多问题中，可以取。这种使子问题规模大致相等的做法是出自一种平衡子问题的思想，它几乎总是比子问题规模不等的做法要好。</p>
+</li>
+<li><p>求解：递归求解各个子问题。<br>第二步的「递归求解各个子问题」指的是按照同样的分治策略进行求解，即通过将这些子问题分解为更小的子子问题来进行求解。就这样一直分解下去，直到分解出来的子问题简单到只用常数操作时间即可解决为止。</p>
+</li>
+<li><p>合并：按照原问题的要求，将子问题的解逐层合并构成原问题的解。<br>最小子问题的解可用常数时间求得。然后我们再按照递归算法中回归过程的顺序，由底至上地将子问题的解合并起来，逐级上推就构成了原问题的解。</p>
+</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">divide_and_conquer</span>(<span class="params">problem</span>):                <span class="comment"># problem 为问题规模</span></span><br><span class="line">    <span class="keyword">if</span> problem &lt; d:                             <span class="comment"># 当问题规模足够小时，直接解决该问题</span></span><br><span class="line">        <span class="keyword">return</span> solove();                        <span class="comment"># 直接求解</span></span><br><span class="line">    </span><br><span class="line">    k_problems = divide(problem)                <span class="comment"># 将问题分解为 k 个相同形式的子问题</span></span><br><span class="line">    </span><br><span class="line">    res = [<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(k)]                 <span class="comment"># res 用来保存 k 个子问题的解</span></span><br><span class="line">    <span class="keyword">for</span> k_problem <span class="keyword">in</span> k_problems:</span><br><span class="line">        res[i] = divide_and_conquer(k_problem)  <span class="comment"># 递归的求解 k 个子问题</span></span><br><span class="line">    </span><br><span class="line">    ans = merge(res)                            <span class="comment"># 合并 k 个子问题的解</span></span><br><span class="line">    <span class="keyword">return</span> ans                                  <span class="comment"># 返回原问题的解</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/ZhenyuPU/picx-images-hosting@master/20230911/image.3rro64b7moa0.webp" alt="image2"></p>
+<h2 id="递推求解法"><a href="#递推求解法" class="headerlink" title="递推求解法"></a>递推求解法</h2><h2 id="递归树法"><a href="#递归树法" class="headerlink" title="递归树法"></a>递归树法</h2><h1 id="回溯算法Backtracking"><a href="#回溯算法Backtracking" class="headerlink" title="回溯算法Backtracking"></a>回溯算法Backtracking</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">res = []    <span class="comment"># 存放所欲符合条件结果的集合</span></span><br><span class="line">path = []   <span class="comment"># 存放当前符合条件的结果</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">backtracking</span>(<span class="params">nums</span>):             <span class="comment"># nums 为选择元素列表</span></span><br><span class="line">    <span class="keyword">if</span> 遇到边界条件:                  <span class="comment"># 说明找到了一组符合条件的结果</span></span><br><span class="line">        res.append(path[:])         <span class="comment"># 将当前符合条件的结果放入集合中</span></span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(nums)):      <span class="comment"># 枚举可选元素列表</span></span><br><span class="line">        path.append(nums[i])        <span class="comment"># 选择元素</span></span><br><span class="line">        backtracking(nums)          <span class="comment"># 递归搜索</span></span><br><span class="line">        path.pop()                  <span class="comment"># 撤销选择</span></span><br><span class="line"></span><br><span class="line">backtracking(nums)</span><br></pre></td></tr></table></figure>
         
     
 
@@ -647,7 +684,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2023/09/">September 2023<span class="sidebar_archives-count">4</span></a>
+                <a class="sidebar_archives-link" href="/archives/2023/09/">September 2023<span class="sidebar_archives-count">6</span></a>
             </ul>
         </li>
         

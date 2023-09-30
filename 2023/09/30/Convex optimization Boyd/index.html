@@ -48,8 +48,6 @@
     
     <title>
         
-            categories | 
-        
         Homepage
     </title>
 
@@ -215,7 +213,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Homepage">
-    <meta name="msapplication-starturl" content="http://ZhenyuPU.github.io/categories/">
+    <meta name="msapplication-starturl" content="http://ZhenyuPU.github.io/2023/09/30/Convex%20optimization%20Boyd/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Homepage">
@@ -230,13 +228,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://ZhenyuPU.github.io/categories/">
+    <meta property="og:url" content="http://ZhenyuPU.github.io/2023/09/30/Convex%20optimization%20Boyd/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="categories | Homepage">
+    <meta property="og:title" content="Homepage">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
     
 
+    
+        <meta property="article:published_time" content="Sat Sep 30 2023 12:46:24 GMT+0200">
+        <meta property="article:modified_time" content="Sat Sep 30 2023 12:47:36 GMT+0200">
     
 
     <!-- The Twitter Card protocol -->
@@ -244,13 +245,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://ZhenyuPU.github.io/categories/index.html" />
+        <link rel="canonical" href="http://ZhenyuPU.github.io/2023/09/30/Convex%20optimization%20Boyd/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://ZhenyuPU.github.io/2023/09/30/Convex%20optimization%20Boyd/index.html",
+    "headline": "",
+    "datePublished": "Sat Sep 30 2023 12:46:24 GMT+0200",
+    "dateModified": "Sat Sep 30 2023 12:47:36 GMT+0200",
+    "author": {
+        "@type": "Person",
+        "name": "Zhenyu PU",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "Hi, nice to meet you"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Homepage",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "Algorithm, Optimization",
+    "description": "",
+}
+</script>
 
 
     
@@ -286,6 +317,39 @@
 
                     <!-- Post TOC -->
 
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Convex-optimization-Boyd"><span class="post-toc-number">1.</span> <span class="post-toc-text"> Convex optimization Boyd</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Convex-optimization-problems"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Convex optimization problems</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Basic-terminology"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">Basic terminology:</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Feasiblility-problem"><span class="post-toc-number">1.1.1.1.</span> <span class="post-toc-text">Feasiblility problem</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Maximization-problem"><span class="post-toc-number">1.1.1.2.</span> <span class="post-toc-text">Maximization problem</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Equivalent-problems"><span class="post-toc-number">1.1.1.3.</span> <span class="post-toc-text">Equivalent problems:</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#change-of-varibales"><span class="post-toc-number">1.1.1.3.1.</span> <span class="post-toc-text">change of varibales:</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Transformation-of-objective-and-constaint-functions"><span class="post-toc-number">1.1.1.3.2.</span> <span class="post-toc-text">Transformation of objective and constaint functions</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Slack-varibales"><span class="post-toc-number">1.1.1.3.3.</span> <span class="post-toc-text">Slack varibales</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Eliminating-equality-constraints"><span class="post-toc-number">1.1.1.3.4.</span> <span class="post-toc-text">Eliminating equality constraints</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Eliminating-linear-equality-constraints"><span class="post-toc-number">1.1.1.3.5.</span> <span class="post-toc-text">Eliminating linear equality constraints</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Linear-optimization"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">Linear optimization</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Quadratic-optimization"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">Quadratic optimization</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Geometric-programming"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">Geometric programming</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Generalized-inequality-constraints"><span class="post-toc-number">1.1.5.</span> <span class="post-toc-text">Generalized inequality constraints</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Vector-optimization"><span class="post-toc-number">1.1.6.</span> <span class="post-toc-text">Vector optimization</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Convex-function"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Convex function</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Duality"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Duality</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Convex-sets"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Convex sets</span></a></li></ol></li></ol>
+    </ul>
+    
+
+
+
 
 <!-- Layouts -->
 
@@ -312,7 +376,7 @@
         
     
             <p class="article-headline-p">
-                categories
+                
             </p>
         </div>
 
@@ -331,7 +395,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Zhenyu PU</strong>
-        <span>Sep 09, 2023</span>
+        <span>Sep 30, 2023</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -363,7 +427,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=categories&url=http://ZhenyuPU.github.io/categories/index.html&pic=http://ZhenyuPU.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=&url=http://ZhenyuPU.github.io/2023/09/30/Convex%20optimization%20Boyd/index.html&pic=http://ZhenyuPU.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 Share to Weibo
             </li>
@@ -372,7 +436,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=categories&url=http://ZhenyuPU.github.io/categories/index.html&via=Zhenyu PU" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=&url=http://ZhenyuPU.github.io/2023/09/30/Convex%20optimization%20Boyd/index.html&via=Zhenyu PU" target="_blank">
             <li class="mdl-menu__item">
                 Share to Twitter
             </li>
@@ -381,7 +445,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://ZhenyuPU.github.io/categories/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://ZhenyuPU.github.io/2023/09/30/Convex%20optimization%20Boyd/index.html" target="_blank">
             <li class="mdl-menu__item">
                 Share to Facebook
             </li>
@@ -396,7 +460,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Homepage&title=categories&summary=&pics=http://ZhenyuPU.github.io/img/favicon.png&url=http://ZhenyuPU.github.io/categories/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Homepage&title=&summary=&pics=http://ZhenyuPU.github.io/img/favicon.png&url=http://ZhenyuPU.github.io/2023/09/30/Convex%20optimization%20Boyd/index.html" target="_blank">
             <li class="mdl-menu__item">
                 Share to QQ
             </li>
@@ -415,7 +479,21 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        
+        <h1 id="Convex-optimization-Boyd"><a href="#Convex-optimization-Boyd" class="headerlink" title=" Convex optimization Boyd"></a><center> Convex optimization Boyd</h1><h2 id="Convex-optimization-problems"><a href="#Convex-optimization-problems" class="headerlink" title="Convex optimization problems"></a>Convex optimization problems</h2><p>Know about optimization problems and the meaning of convex optimization</p>
+<h3 id="Basic-terminology"><a href="#Basic-terminology" class="headerlink" title="Basic terminology:"></a>Basic terminology:</h3><p>Feasible; Feasible set and constraint set (feasible points)<br>The domain of optimization problem:<br>$$ D &#x3D; \bigcap_{i&#x3D;0}^{m} dom f_i \cap \bigcap_{i&#x3D;1}^{p} dom h_i $$</p>
+<p>unbounded below: $ f_0(x_k) \rightarrow -\infty$, as $ k \rightarrow \infty $</p>
+<ul>
+<li>Optimal point</li>
+<li>locally optimal point: x maximizes $f_0$ over nearby points in the feasible set.</li>
+</ul>
+<p>active and inactive; constraint is redundant</p>
+<h4 id="Feasiblility-problem"><a href="#Feasiblility-problem" class="headerlink" title="Feasiblility problem"></a>Feasiblility problem</h4><h4 id="Maximization-problem"><a href="#Maximization-problem" class="headerlink" title="Maximization problem"></a>Maximization problem</h4><h4 id="Equivalent-problems"><a href="#Equivalent-problems" class="headerlink" title="Equivalent problems:"></a>Equivalent problems:</h4><p>equivalent means if from a solution of one, a solution of the other is readily found.<br>They are not the same since the functions differ but they are equivalent.</p>
+<p>Transformations that yield equivalent problems:</p>
+<h5 id="change-of-varibales"><a href="#change-of-varibales" class="headerlink" title="change of varibales:"></a>change of varibales:</h5><p>$$ \begin{align}<br>\hat{f_i(z)} &amp;&#x3D; f_i(\phi(z)), i &#x3D; 0,…,m \<br>\hat{h_i(z)} &amp;&#x3D; h_i(\phi(z)), i&#x3D;1,…,p\<br>\end{align}$$<br>substistution of varibale: $x &#x3D; \phi(z) $, where suppose $\phi$ is one to one</p>
+<h5 id="Transformation-of-objective-and-constaint-functions"><a href="#Transformation-of-objective-and-constaint-functions" class="headerlink" title="Transformation of objective and constaint functions"></a>Transformation of objective and constaint functions</h5><p>Suppose that $\phi_0$ is monotone increasing and $\phi_i(u) \leq 0$ if and only if $u \leq 0$, and $\phi_{m+1},…,\phi_{m+p}$ satisfy $\phi_i(u) &#x3D; 0 $ if and only if $ u &#x3D; 0 $<br>$$\begin{align}<br>\hat{f_i}(x) &amp;&#x3D; \psi_i(f_i(x)) \<br>\hat{h_i}(x) &amp;&#x3D; \psi_{m+i}(h_i(x)) \<br>\end{align}$$<br>&#x3D;&#x3D;why $ ||Ax - b||_2 $ is not differentiable&#x3D;&#x3D;</p>
+<h5 id="Slack-varibales"><a href="#Slack-varibales" class="headerlink" title="Slack varibales"></a>Slack varibales</h5><p>Suppose $s_i &#x3D; -f_i(x) &lt; 0 $ then $(x, s)$ is feasible for the problem and x is feasible for the original problem.</p>
+<h5 id="Eliminating-equality-constraints"><a href="#Eliminating-equality-constraints" class="headerlink" title="Eliminating equality constraints"></a>Eliminating equality constraints</h5><p>Suppose a function $\phi$: is such that x satisfies $h_i(x)&#x3D;0$ if and only if there is some z such that $x &#x3D; \phi(z)$</p>
+<h5 id="Eliminating-linear-equality-constraints"><a href="#Eliminating-linear-equality-constraints" class="headerlink" title="Eliminating linear equality constraints"></a>Eliminating linear equality constraints</h5><h3 id="Linear-optimization"><a href="#Linear-optimization" class="headerlink" title="Linear optimization"></a>Linear optimization</h3><h3 id="Quadratic-optimization"><a href="#Quadratic-optimization" class="headerlink" title="Quadratic optimization"></a>Quadratic optimization</h3><h3 id="Geometric-programming"><a href="#Geometric-programming" class="headerlink" title="Geometric programming"></a>Geometric programming</h3><h3 id="Generalized-inequality-constraints"><a href="#Generalized-inequality-constraints" class="headerlink" title="Generalized inequality constraints"></a>Generalized inequality constraints</h3><h3 id="Vector-optimization"><a href="#Vector-optimization" class="headerlink" title="Vector optimization"></a>Vector optimization</h3><h2 id="Convex-function"><a href="#Convex-function" class="headerlink" title="Convex function"></a>Convex function</h2><h2 id="Duality"><a href="#Duality" class="headerlink" title="Duality"></a>Duality</h2><h2 id="Convex-sets"><a href="#Convex-sets" class="headerlink" title="Convex sets"></a>Convex sets</h2>
         
     
 
@@ -433,8 +511,8 @@
     <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://zhenyupu.github.io/categories/index.html';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://zhenyupu.github.io/categories/index.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://zhenyupu.github.io/2023/09/30/Convex%20optimization%20Boyd/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://zhenyupu.github.io/2023/09/30/Convex%20optimization%20Boyd/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 <script type="text/ls-javascript" id="disqus-thread-script">
@@ -469,6 +547,14 @@
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
+    
+        <a href="/2023/09/22/Machine%20Learning/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
     
 </nav>
 
@@ -647,6 +733,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 
