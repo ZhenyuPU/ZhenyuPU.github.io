@@ -24,7 +24,7 @@ repository               : "ZhenyuPU/ZhenyuPU.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "_site/images/profile.jpg"
   name             : "Zhenyu PU"
   pronouns         : # example: "she/her"  
   bio              : "Master candidate, Xi'an Jiaotong University"
