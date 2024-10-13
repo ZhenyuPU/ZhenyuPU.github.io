@@ -15,7 +15,7 @@ title                    : "HOME"
 title_separator          : "-"
 name                     : &name "Zhenyu PU"
 description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://zhenyupu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ZhenyuPU/ZhenyuPU.github.io"
 
@@ -24,7 +24,7 @@ repository               : "ZhenyuPU/ZhenyuPU.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "https://cdn.jsdelivr.net/gh/ZhenyuPU/picx-images-hosting@master/20241013/my_figure1.2pvne8ny2j60.webp"
+  avatar           : https://cdn.jsdelivr.net/gh/ZhenyuPU/picx-images-hosting@master/20241013/my_figure1.2pvne8ny2j60.webp
   name             : "Zhenyu PU"
   pronouns         : # example: "she/her"  
   bio              : "Master candidate, Xi'an Jiaotong University"
