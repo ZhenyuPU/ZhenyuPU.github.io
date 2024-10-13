@@ -21,5 +21,9 @@
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
   {% endif %}
+  <!-- 添加电子邮件链接 -->
+  <li>
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+  </li>
   </div>
 {% endif %}
