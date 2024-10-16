@@ -11,54 +11,53 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* M.S. Candidate in Automation Science and Engineering
+  * Xi'an Jiaotong University, 2024-2027
+  * Supervisor: Yu YANG (杨玉)
+* B.S. in Energy and Power Engineering
+  * Xi'an Jiaotong University, 2024
+* Engineering Studies in Artificial Intelligence and Computer Science
+  * École Centrale de Nantes, 2022-2024
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Academic Projects
+  * Fundamental theories and key technologies for the coordinated operation of hydrogen-containing multi-energy supply and demand systems, participated in, ongoing research (2024-present).
+  * Virtual power plant bidding Huawei digital energy cooperation project, participated in (2024).
+* Club Leadership
+  * Vice President, China-France Exchange Association, Xi'an Jiaotong University (2024-present)
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+Awards and Honors
+======
+* National College Student Mathematical Modeling Competition
+  * Second Prize, Shaanxi Province, 2022
+  * First Prize, Shaanxi Province, 2021
+* National Award
+  * 2022
+  * 2021
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Python
+* C/C++
+* MATLAB
+* Git
+* HTML/css
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
+
+  <!-- <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
   
-Talks
+<!-- Talks
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
   
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
   
-Service and leadership
+Organization
 ======
-* Currently signed in to 43 different slack teams
+* Currently affiliated with the Cyber-Physical Energy Lab, System Engineering Institute.
