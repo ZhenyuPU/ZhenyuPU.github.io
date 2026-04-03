@@ -11,9 +11,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "HOME"
+title                    : "Zhenyu Pu / HomePage"
 title_separator          : "-"
-name                     : "Zhenyu PU (蒲溱宇)"
+name                     : "Zhenyu Pu (蒲溱宇)"
 description              : "personal description"
 url                      : https://zhenyupu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -25,13 +25,13 @@ repository               : "ZhenyuPU/ZhenyuPU.github.io"
 author:
   # Biographic information
   avatar           : https://cdn.jsdelivr.net/gh/ZhenyuPU/picx-images-hosting@master/20241013/my_figure1.2pvne8ny2j60.webp
-  name             : "Zhenyu PU"
+  name             : "Zhenyu Pu"
   pronouns         : # example: "she/her"  
-  bio              : "Master candidate, Xi'an Jiaotong University"
+  bio              : "Graduate student, specialized in Reinforcement learning and complex networked system"
   location         : "Xi'an, China"
   employer         : "Xi'an Jiaotong University"
   uri              : # URL
-  email            : "zhenyupu@foxmail.com" 
+  email            : "zhenyupu@stu.xjtu.edu.cn" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -80,9 +80,9 @@ author:
 publication_category:
   books:
     title: 'Books'
-  manuscripts:
+  journal:
     title: 'Journal Articles'    
-  conferences:
+  conference:
     title: 'Conference Papers'
 
 # Site Settings

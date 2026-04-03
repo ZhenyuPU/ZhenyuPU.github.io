@@ -11,9 +11,8 @@ author_profile: true
 
 {% include base_path %}
 
-You can find my articles on my [Google Scholar profile]({{site.author.googlescholar}}).
-
 <!-- New style rendering if publication categories are defined -->
+ {% comment %}
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
@@ -22,7 +21,6 @@ You can find my articles on my [Google Scholar profile]({{site.author.googlescho
         {% continue %}
       {% endif %}
       {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
       {% include archive-single.html %}
@@ -33,6 +31,9 @@ You can find my articles on my [Google Scholar profile]({{site.author.googlescho
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
+{% endcomment %}
 
-
-
+{% assign posts_sorted = site.publications | sort: 'date' | reverse %}
+{% for post in posts_sorted %}
+  {% include archive-single.html %}
+{% endfor %}

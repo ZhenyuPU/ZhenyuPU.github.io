@@ -243,3 +243,38 @@
     }
   }
 }
+
+
+@media (max-width: 600px) {
+  .publication-card {
+    flex-wrap: nowrap;
+  }
+  .publication-card > div:first-child {
+    width: 40% !important;
+  }
+}
+
+.archive__item-content {
+    width: 120% !important;
+    max-width: 1800px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+}
+
+
+
+.archive__item-teaser {
+  flex: 0 0 20%;   
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.archive__item-teaser img {
+  // width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.archive__item-teaser:hover img {
+  transform: scale(1.1);
+}
