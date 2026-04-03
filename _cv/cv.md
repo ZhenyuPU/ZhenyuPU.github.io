@@ -2,14 +2,13 @@
 layout: archive
 title: "CV"
 permalink: /cv/
+collection: cv
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
 You can download my full CV using the link below:
 
-[Download CV (PDF)](files/ZhenyuPuCV.pdf)
+[Download my CV (PDF)](/files/ZhenyuPuCV.pdf)
 
 <!-- Education
 ======
