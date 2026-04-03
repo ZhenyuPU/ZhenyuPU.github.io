@@ -7,9 +7,11 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+You can download my full CV using the link below:
 
-Education
+{% files/ZhenyuPuCV.pdf %}
+
+<!-- Education
 ======
 * M.S. Candidate in Automation Science and Engineering
   * Xi'an Jiaotong University, 2024-2027
@@ -42,10 +44,10 @@ Skills
 * C/C++
 * MATLAB
 * Git
-* HTML/css
+* HTML/css -->
 
-Publications
-======
+<!-- Publications -->
+<!-- ====== -->
 
   <!-- <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
@@ -58,6 +60,6 @@ Publications
   {% endfor %}</ul> -->
   
   
-Organization
+<!-- Organization
 ======
-* Currently affiliated with the Cyber-Physical Energy Lab, System Engineering Institute.
+* Currently affiliated with the Cyber-Physical Energy Lab, System Engineering Institute. -->
