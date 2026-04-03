@@ -9,5 +9,6 @@ venue: 'ArXiv， 2026'
 # slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
 paperurl: 'https://arxiv.org/pdf/2602.00027'
 citation: 'Zhenyu Pu, Yu Yang, Lun Yang, Qing-Shan Jia, Xiaohong Guan, Costas J. Spanos'
-teaser: '/images/publications/SR_RL_HMES_algo.png'
+header:
+    teaser: '/images/publications/SR_RL_HMES_algo.png'
 ---
