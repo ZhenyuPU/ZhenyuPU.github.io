@@ -9,7 +9,7 @@ redirect_from:
 
 You can download my full CV using the link below:
 
-{% files/ZhenyuPuCV.pdf %}
+[Download CV (PDF)](files/ZhenyuPuCV.pdf)
 
 <!-- Education
 ======
