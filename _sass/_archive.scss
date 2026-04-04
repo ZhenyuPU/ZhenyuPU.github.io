@@ -260,6 +260,7 @@
     display: flex !important;
     flex-direction: row !important;
     align-items: flex-start !important;
+    font-size: 16px;
 }
 
 
@@ -277,4 +278,24 @@
 
 .archive__item-teaser:hover img {
   transform: scale(1.1);
+}
+
+
+.archive__item-title {
+  font-size: 1.0rem;
+}
+
+.archive__item-authors {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.archive__item-meta p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.archive__item-excerpt {
+  font-size: 0.9rem;
+  color: #444;
 }
