@@ -26,6 +26,7 @@ author:
   # Biographic information
   avatar           : https://cdn.jsdelivr.net/gh/ZhenyuPU/picx-images-hosting@master/20241013/my_figure1.2pvne8ny2j60.webp
   name             : "Zhenyu Pu"
+  name_cn          : "蒲溱宇"
   pronouns         : # example: "she/her"  
   bio              : "Graduate student, specialized in Reinforcement learning and complex networked system"
   location         : "Xi'an, China"
