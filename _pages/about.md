@@ -8,8 +8,8 @@ redirect_from:
 ---
 
 
-I am a second-year M.S. student in Automation at Xi’an Jiaotong University, affiliated with the Institute of Systems Engineering, School of Automation Science and Engineering. I am supervised by Prof. Yu Yang and a member of the research group led by Academician Xiaohong Guan.
+I am a second-year M.S. student in Automation at Xi’an Jiaotong University, affiliated with the Institute of Systems Engineering, School of Automation Science and Engineering. I am supervised by Prof. Yu Yang.
 
-My research focuses on reinforcement learning (RL) for optimization and control in complex physical systems, with particular interests in multi-energy systems, energy management and workload scheduling in AI data centers.
-I am deeply motivated by real-world decision-making problems and fascinated by the self-learning capability of RL. My work explores the integration of representation learning with RL to capture complex, coupled system states and to enable dynamic prediction in latent spaces under uncertainty. In addition, I have investigated end-to-end predict-to-optimize frameworks that jointly train predictive models and downstream optimization tasks, aiming to improve decision-making performance in uncertain environments.
-Ultimately, my goal is to develop intelligent decision-making methods that can operate robustly and efficiently across diverse and dynamic real-world conditions.
+My research interests are in the area of reinforcement learning (RL) and learning-based decision-making for complex cyber-physical and interactive dynamical systems. The goal is to develop principled RL methods that can learn compact representations and latent dynamics of complex environments, thereby enabling robust, efficient, and reliable long-horizon decision-making under uncertainty. My current research focuses on topics such as \textbf{latent dynamics learning}, \textbf{representation learning}, \textbf{model-augmented RL}, and \textbf{decision-focused learning}.
+
+Beyond that, I am also interested in developing \textbf{physically grounded and decision-oriented learning frameworks} for real-world autonomous systems. By incorporating \textbf{physics-consistent modeling}, these frameworks can support robust and efficient control and optimization in diverse dynamic environments, including energy systems, AI data centers, and broader autonomous systems.
